@@ -1,12 +1,10 @@
 # ImagePredicator
-It can predict the image by using the text
+ImagePredicatior is a customiseable Subclass of UIImageview that is designed to show user's profile pictures.It falls back to the user's initials with a random background color if no profile picture is supplied.
 
 ![alt text](https://github.com/RMohanRaj/ImagePredicator/blob/master/Circular.png)
 # This Project is to Display the Image Predicted by text.
 
 *Create a Category file with uiimageview class
-
-copy the coding from "UIImageView+predicatorClass.h" and #import "UIImageView+predicatorClass.h"  and paste the following Lines in your Category class file.
 
 After that you have to import the Category Class file in viewcontroller.m
 ```
@@ -20,15 +18,12 @@ In storyboard add a Textfield Imageview and 2 buttons, Add Create the outlet and
 ```
 [_PredicatorImg setImageWithString:YourTextField.text color:nil circular:NO];
 ```
-Add the above line in Button action.
-It will show the image like this
-![alt text](https://github.com/RMohanRaj/ImagePredicator/blob/master/Square.png)
 
-Suppose your adding this lines in Button action.
+Suppose your adding the below lines in Button action.  
 ```
  [_PredicatorImg setImageWithString:YourTextField.text color:nil circular:YES textAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"Futura-Medium" size:58.0f], NSForegroundColorAttributeName:[UIColor blueColor]}];
 ```
-The image will be circle and the font is changed.
+The image will be circle and It works great with custom fonts!
 For Further things refer viewcontroller.m
 
 License
